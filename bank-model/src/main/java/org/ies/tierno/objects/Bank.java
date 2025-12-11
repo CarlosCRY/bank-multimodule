@@ -1,4 +1,4 @@
-package model;
+package org.ies.tierno.objects;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package banco.app;
+package org.ies.tierno.objects.app;
 
 import org.ies.tierno.banco.model.Account;
 import org.ies.tierno.banco.model.Bank;

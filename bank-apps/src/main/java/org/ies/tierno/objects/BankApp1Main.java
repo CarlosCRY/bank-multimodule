@@ -1,13 +1,13 @@
-package banco;
+package org.ies.tierno.objects;
 
-import org.ies.tierno.banco.app.BankApp2;
-import org.ies.tierno.banco.readers.AccountReader;
-import org.ies.tierno.banco.readers.BankReader;
-import org.ies.tierno.banco.readers.ClientReader;
+import org.ies.tierno.objects.app.BankApp1;
+import org.ies.tierno.objects.AccountReader;
+import org.ies.tierno.objects.BankReader;
+import org.ies.tierno.objects.ClientReader;
 
 import java.util.Scanner;
 
-public class BankApp2Main {
+public class BankApp1Main {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class BankApp2Main {
         ClientReader clientReader = new ClientReader (scanner);
         AccountReader accountReader = new AccountReader (scanner, clientReader);
         BankReader bankReader = new BankReader (scanner, accountReader);
-        BankApp2 bankApp = new BankApp2 (scanner, bankReader);
+        BankApp1 bankApp = new BankApp1 (scanner, bankReader);
 
         bankApp.run();
     }

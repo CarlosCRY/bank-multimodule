@@ -1,7 +1,7 @@
-package readers;
+package org.ies.tierno.objects;
 
-import org.ies.tierno.banco.model.Account;
-import org.ies.tierno.banco.model.Bank;
+import org.ies.tierno.objects.Account;
+import org.ies.tierno.objects.Bank;
 
 import java.util.Scanner;
 

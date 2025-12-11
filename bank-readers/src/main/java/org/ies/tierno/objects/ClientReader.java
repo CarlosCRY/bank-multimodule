@@ -1,6 +1,6 @@
-package readers;
+package org.ies.tierno.objects;
 
-import org.ies.tierno.banco.model.Client;
+import org.ies.tierno.objects.Client;
 
 import java.util.Scanner;
 
