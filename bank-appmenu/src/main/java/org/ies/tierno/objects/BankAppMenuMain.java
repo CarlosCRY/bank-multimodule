@@ -1,0 +1,22 @@
+package org.ies.tierno.objects;
+
+import org.ies.tierno.objects.app.BankAppMenu;
+import org.ies.tierno.objects.AccountReader;
+import org.ies.tierno.objects.BankReader;
+import org.ies.tierno.objects.ClientReader;
+
+import java.util.Scanner;
+
+public class BankAppMenuMain {
+    public static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ClientReader clientReader = new ClientReader (scanner);
+        AccountReader accountReader = new AccountReader (scanner, clientReader);
+        BankReader bankReader = new BankReader (scanner, accountReader);
+        BankAppMenu bankApp = new BankAppMenu (scanner, bankReader);
+
+        bankApp.run();
+    }
+}
