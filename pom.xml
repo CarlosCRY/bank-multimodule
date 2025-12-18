@@ -11,7 +11,9 @@
     <modules>
         <module>bank-model</module>
         <module>bank-readers</module>
-        <module>bank-apps</module>
+        <module>bank-app1</module>
+        <module>bank-app2</module>
+        <module>bank-app3</module>
     </modules>
 
 
